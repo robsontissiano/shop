@@ -8,6 +8,11 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
 <script>
+  if (false) {
+    // For the analyzer's benefit, it doesn't know about v0 vanilla element
+    // syntax, so pretend shop-analytics is a v1 element.
+    customElements.define('shop-analytics', class extends HTMLElement {});
+  }
   document.registerElement('shop-analytics', {
    prototype: {
      __proto__: HTMLElement.prototype,
