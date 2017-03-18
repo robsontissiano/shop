@@ -48,7 +48,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       .billing-address-picker {
         margin: 28px 0;
         height: 20px;
-        @apply(--layout-horizontal);
+        @apply --layout-horizontal;
       }
 
       .billing-address-picker > label {
@@ -57,11 +57,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       .grid {
         margin-top: 40px;
-        @apply(--layout-horizontal);
+        @apply --layout-horizontal;
       }
 
       .grid > section {
-        @apply(--layout-flex);
+        @apply --layout-flex;
       }
 
       .grid > section:not(:first-child) {
@@ -69,17 +69,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       .row {
-        @apply(--layout-horizontal);
-        @apply(--layout-end);
+        @apply --layout-horizontal;
+        @apply --layout-end;
       }
 
       .column {
-        @apply(--layout-vertical);
+        @apply --layout-vertical;
       }
 
       .row > .flex,
       .input-row > * {
-        @apply(--layout-flex);
+        @apply --layout-flex;
       }
 
       .input-row > *:not(:first-child) {
